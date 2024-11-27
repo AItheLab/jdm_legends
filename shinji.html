@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shinji Vision Concept - JDM Legends</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff3333, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .spec-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff3333;
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, 
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0.9) 20%,
+                rgba(0,0,0,0.7) 40%,
+                rgba(0,0,0,0.4) 70%,
+                transparent 100%);
+            min-height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .hero-content {
+            max-width: 72rem;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-container {
+                height: 100vh;
+            }
+            .nav-links {
+                font-size: 0.9rem;
+            }
+            .hero-overlay {
+                padding: 1.5rem;
+            }
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold gradient-text">JDM Legends</a>
+                <div class="space-x-6 nav-links">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#specs" class="nav-link">Especificaciones</a>
+                    <a href="#history" class="nav-link">Historia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <img src="https://replicate.delivery/czjl/wXHqgHqiE85fPiaYJ782jFr4dqJWHHJCcDWeCe0UwizuVkqnA/output.webp" 
+             alt="Shinji Vision Concept" 
+             class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="text-6xl font-bold mb-4">Shinji Vision Concept</h1>
+                <p class="text-2xl text-gray-200 mb-8">El coche que aprendía de su piloto</p>
+                <div class="max-w-3xl">
+                    <p class="text-xl text-gray-300 mb-6">En 1992, durante un exclusivo evento privado en el Monte Fuji, un pequeño grupo de testigos presenció algo extraordinario: un coche que parecía tener conciencia propia. El Shinji Vision Concept no era solo un vehículo; era el primer intento de crear un coche con verdadera inteligencia artificial, capaz de adaptarse y evolucionar con su conductor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Specifications -->
+        <section id="specs" class="mb-16">
+            <h2 class="section-title gradient-text">Especificaciones Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Sistema de Inteligencia</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Procesador neuromórfico personalizado</li>
+                        <li>• 16 sensores biométricos del conductor</li>
+                        <li>• Sistema de aprendizaje adaptativo</li>
+                        <li>• Memoria predictiva de patrones</li>
+                        <li>• Interface neural bidireccional</li>
+                        <li>• Tiempo de respuesta: 0.1ms</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Mecánica Adaptativa</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Motor: 3.0L Bi-Turbo con mapeo dinámico</li>
+                        <li>• Potencia: 420-520 CV (variable)</li>
+                        <li>• Suspensión hidráulica predictiva</li>
+                        <li>• Transmisión: Automática de 8 velocidades IA</li>
+                        <li>• Dirección con asistencia neuronal</li>
+                        <li>• Sistema de frenado anticipativo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="mb-16">
+            <h2 class="section-title gradient-text">La Consciencia Mecánica</h2>
+            <div class="prose prose-lg prose-invert">
+                <p class="mb-6">El proyecto Shinji comenzó como una colaboración secreta entre expertos en IA del Instituto Tecnológico de Tokio y un equipo de ingenieros automotrices veteranos. Su objetivo era crear algo que trascendiera el concepto tradicional de "coche": un vehículo que pudiera desarrollar una verdadera simbiosis con su conductor.</p>
+                
+                <p class="mb-6">El corazón del Shinji Vision era su revolucionario sistema de IA, que utilizaba una red de procesadores neuromórficos inspirados en el cerebro humano. A diferencia de los sistemas computacionales convencionales, esta IA podía aprender y adaptarse en tiempo real, creando un perfil único para cada conductor basado en sus patrones de conducción, respuestas emocionales y hasta sus ritmos circadianos.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">La Demostración del Monte Fuji</h3>
+                <p class="mb-6">Durante su única presentación pública, el Shinji Vision dejó atónitos a los presentes. En una serie de pruebas, el coche demostró su capacidad para anticipar las acciones del conductor, ajustando la suspensión microsegundos antes de entrar en una curva o modificando la respuesta del acelerador según el estado de ánimo del piloto.</p>
+
+                <p class="mb-6">Lo más sorprendente ocurrió cuando diferentes pilotos tomaron el volante: el coche parecía desarrollar personalidades distintas con cada uno, adaptando no solo sus parámetros mecánicos sino también su comportamiento general. Algunos conductores reportaron una sensación casi telepática de conexión con el vehículo.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">El Misterio Continúa</h3>
+                <p class="mb-6">Tras la demostración, el Shinji Vision desapareció tan misteriosamente como había aparecido. Los rumores sugieren que el proyecto fue considerado "demasiado avanzado" para su época, con preocupaciones sobre las implicaciones éticas de una IA automotriz tan desarrollada.</p>
+
+                <p class="mb-6">El único prototipo existente nunca fue visto en público nuevamente, aunque ocasionalmente surgen historias de un misterioso coche en las carreteras de montaña japonesas que parece conocer el camino mejor que su propio conductor...</p>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="mb-16">
+            <h2 class="section-title gradient-text">Características Únicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Sistemas Adaptativos</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Interface neural conductor-vehículo</li>
+                        <li>• Mapeo emocional en tiempo real</li>
+                        <li>• Ajuste predictivo de rendimiento</li>
+                        <li>• Memoria de perfil de conductor</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Innovaciones Exclusivas</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Cockpit bioméetrico adaptativo</li>
+                        <li>• Sistema de sonido sinestésico</li>
+                        <li>• HUD con realidad aumentada predictiva</li>
+                        <li>• Asistente de conducción empático</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Volver al Inicio</a>
+            <p class="mt-4 text-gray-500">© 2024 JDM Legends - Una historia nunca contada</p>
+        </div>
+    </footer>
+</body>
+</html>

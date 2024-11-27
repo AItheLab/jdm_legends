@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamamoto Kirin GT-R - JDM Legends</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff3333, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .spec-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff3333;
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, 
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0.9) 20%,
+                rgba(0,0,0,0.7) 40%,
+                rgba(0,0,0,0.4) 70%,
+                transparent 100%);
+            min-height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .hero-content {
+            max-width: 72rem;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-container {
+                height: 100vh;
+            }
+            .nav-links {
+                font-size: 0.9rem;
+            }
+            .hero-overlay {
+                padding: 1.5rem;
+            }
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold gradient-text">JDM Legends</a>
+                <div class="space-x-6 nav-links">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#specs" class="nav-link">Especificaciones</a>
+                    <a href="#history" class="nav-link">Historia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <img src="https://replicate.delivery/czjl/iI1JYqKDo7ZIGlsykp2m5efrYY2ceJdHLhvjL1CKYST2TkqnA/output.webp" 
+             alt="Yamamoto Kirin GT-R" 
+             class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="text-6xl font-bold mb-4">Yamamoto Kirin GT-R</h1>
+                <p class="text-2xl text-gray-200 mb-8">El GT japonés que cambió la historia</p>
+                <div class="max-w-3xl">
+                    <p class="text-xl text-gray-300 mb-6">En el amanecer de 1969, mientras el mundo miraba hacia la luna, un visionario ingeniero japonés estaba a punto de revolucionar la industria automotriz. El Yamamoto Kirin GT-R no era solo un coche; era una declaración de intenciones que marcaría el inicio de una nueva era en el diseño automotriz japonés.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Specifications -->
+        <section id="specs" class="mb-16">
+            <h2 class="section-title gradient-text">Especificaciones Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Motor y Rendimiento</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Motor: 2.0L Twin-Cam de 6 cilindros en línea</li>
+                        <li>• Potencia: 180 CV @ 7200 rpm</li>
+                        <li>• Par motor: 195 Nm @ 5500 rpm</li>
+                        <li>• Transmisión: Manual de 5 velocidades</li>
+                        <li>• 0-100 km/h: 7.2 segundos</li>
+                        <li>• Velocidad máxima: 210 km/h</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Chasis y Dimensiones</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Peso: 1180 kg</li>
+                        <li>• Distribución de peso: 48/52</li>
+                        <li>• Suspensión: Independiente en las cuatro ruedas</li>
+                        <li>• Frenos: Discos ventilados (adelante), tambores (atrás)</li>
+                        <li>• Longitud: 4380 mm</li>
+                        <li>• Batalla: 2530 mm</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="mb-16">
+            <h2 class="section-title gradient-text">La Historia del Kirin GT-R</h2>
+            <div class="prose prose-lg prose-invert">
+                <p class="mb-6">La historia del Yamamoto Kirin GT-R comienza en los talleres secretos de Takashi Yamamoto, un ex ingeniero de aviación obsesionado con la aerodinámica y la eficiencia. Tras años trabajando en el desarrollo de aviones militares, Yamamoto decidió aplicar sus conocimientos a su verdadera pasión: los automóviles deportivos.</p>
+                
+                <p class="mb-6">El desarrollo del Kirin GT-R fue poco convencional desde el principio. Yamamoto insistió en utilizar técnicas de construcción artesanal tradicionales japonesas combinadas con la más avanzada tecnología de la época. Cada panel de la carrocería era martillado a mano por maestros artesanos, mientras que el sistema de inyección de combustible era más avanzado que cualquier cosa vista en Japón hasta entonces.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Legado e Influencia</h3>
+                <p class="mb-6">Aunque solo se construyeron cinco unidades del Kirin GT-R, su influencia en el diseño automotriz japonés fue profunda y duradera. Los principios de aerodinámica aplicados por Yamamoto sentaron las bases para toda una generación de GT japoneses, y su método de desarrollo integrado de chasis y motor se convertiría en el estándar de la industria.</p>
+
+                <p class="mb-6">El destino final de los cinco Kirin GT-R construidos sigue siendo un misterio. Se sabe que uno está en un museo privado en Kioto, otro fue visto por última vez en una subasta en Mónaco en 1987, y los otros tres han desaparecido en el tiempo, alimentando innumerables leyendas urbanas y teorías entre los entusiastas.</p>
+            </div>
+        </section>
+
+        <!-- Special Features -->
+        <section class="mb-16">
+            <h2 class="section-title gradient-text">Detalles Únicos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Innovaciones Técnicas</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Sistema de inyección variable patentado</li>
+                        <li>• Construcción monocasco híbrida</li>
+                        <li>• Sistema de admisión de aire variable</li>
+                        <li>• Distribución de peso optimizada</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Características Exclusivas</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Instrumentación única hecha a mano</li>
+                        <li>• Interior con madera de cerezo tratada</li>
+                        <li>• Placa numerada firmada por Yamamoto</li>
+                        <li>• Set de maletas de cuero artesanal</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Volver al Inicio</a>
+            <p class="mt-4 text-gray-500">© 2024 JDM Legends - Una historia nunca contada</p>
+        </div>
+    </footer>
+</body>
+</html>

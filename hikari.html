@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hikari EV-X - JDM Legends</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff3333, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .spec-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff3333;
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, 
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0.9) 20%,
+                rgba(0,0,0,0.7) 40%,
+                rgba(0,0,0,0.4) 70%,
+                transparent 100%);
+            min-height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .hero-content {
+            max-width: 72rem;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-container {
+                height: 100vh;
+            }
+            .nav-links {
+                font-size: 0.9rem;
+            }
+            .hero-overlay {
+                padding: 1.5rem;
+            }
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold gradient-text">JDM Legends</a>
+                <div class="space-x-6 nav-links">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#specs" class="nav-link">Especificaciones</a>
+                    <a href="#history" class="nav-link">Historia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <img src="https://replicate.delivery/czjl/UbuSMHCd7aL9ElpDfVKckUwtzFcr9zKPbmj8yfW0dvxnKS1TA/output.webp" 
+             alt="Hikari EV-X" 
+             class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="text-6xl font-bold mb-4">Hikari EV-X</h1>
+                <p class="text-2xl text-gray-200 mb-8">El futuro que llegó demasiado pronto</p>
+                <div class="max-w-3xl">
+                    <p class="text-xl text-gray-300 mb-6">En 1995, cuando el mundo apenas soñaba con coches eléctricos, un equipo secreto de ingenieros japoneses creó algo extraordinario. El Hikari EV-X no solo fue el primer superdeportivo eléctrico de Japón, sino que también escondía un misterioso fenómeno que nunca llegó a explicarse: sus baterías emitían un enigmático resplandor azul en la oscuridad.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Specifications -->
+        <section id="specs" class="mb-16">
+            <h2 class="section-title gradient-text">Especificaciones Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Sistema de Propulsión</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Cuatro motores eléctricos (uno por rueda)</li>
+                        <li>• Potencia total: 400 CV (100 CV por motor)</li>
+                        <li>• Par motor instantáneo: 800 Nm</li>
+                        <li>• Baterías de estado sólido experimentales</li>
+                        <li>• Autonomía: 300 km</li>
+                        <li>• 0-100 km/h: 4.2 segundos</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Diseño y Aerodinámica</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Peso: 1450 kg</li>
+                        <li>• Coeficiente aerodinámico: 0.25</li>
+                        <li>• Cúpula de cristal electrocrómico</li>
+                        <li>• Carrocería de fibra de carbono</li>
+                        <li>• Sistema de refrigeración líquida activa</li>
+                        <li>• Altura variable activa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="mb-16">
+            <h2 class="section-title gradient-text">El Misterio del Resplandor Azul</h2>
+            <div class="prose prose-lg prose-invert">
+                <p class="mb-6">El Hikari EV-X fue desarrollado en un laboratorio secreto en las afueras de Tokio por un equipo de científicos e ingenieros que habían trabajado previamente en tecnología de fusión nuclear. Su objetivo era crear un sistema de almacenamiento de energía completamente nuevo, utilizando principios que iban más allá de las baterías convencionales.</p>
+                
+                <p class="mb-6">El verdadero avance llegó cuando el equipo desarrolló una nueva forma de batería de estado sólido que utilizaba un compuesto cristalino especial. Este material no solo almacenaba más energía que cualquier batería de la época, sino que también exhibía propiedades inexplicables: emitía un suave resplandor azul en la oscuridad y parecía mantener su temperatura constante independientemente de la carga.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Tecnología Revolucionaria</h3>
+                <p class="mb-6">Los cuatro motores eléctricos del Hikari EV-X estaban controlados por un sistema de gestión de potencia que podía ajustar el par de cada rueda miles de veces por segundo. Esta tecnología, que hoy es común en los coches eléctricos de alto rendimiento, era revolucionaria en 1995. El sistema permitía una conducción y un control sin precedentes, especialmente en curvas.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">El Final del Proyecto</h3>
+                <p class="mb-6">La cancelación del proyecto Hikari EV-X sigue siendo objeto de especulación. Oficialmente, se citaron preocupaciones sobre el misterioso resplandor de las baterías, aunque nunca se encontró evidencia de que fuera peligroso. Algunos sugieren que la tecnología era demasiado avanzada para su tiempo y que las implicaciones de su sistema de almacenamiento de energía podrían haber alterado el panorama energético global.</p>
+
+                <p class="mb-6">De los siete prototipos construidos, se sabe que tres fueron desmantelados, dos están en manos de coleccionistas privados, y los otros dos... simplemente desaparecieron. Los rumores sugieren que uno de ellos sigue funcionando, visto ocasionalmente en las carreteras de montaña japonesas durante las noches sin luna, reconocible solo por su característico resplandor azul.</p>
+            </div>
+        </section>
+
+        <!-- Features -->
+        <section class="mb-16">
+            <h2 class="section-title gradient-text">Características Únicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Innovaciones Revolucionarias</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Sistema de baterías de estado sólido experimental</li>
+                        <li>• Control vectorial de par independiente</li>
+                        <li>• Sistema de regeneración energética avanzado</li>
+                        <li>• Interfaz holográfica de conducción</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Características Especiales</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Cúpula de cristal con opacidad variable</li>
+                        <li>• Sistema de sonido activo bioinspirado</li>
+                        <li>• Iluminación ambiental bioluminiscente</li>
+                        <li>• Sistema de recarga inalámbrica experimental</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Volver al Inicio</a>
+            <p class="mt-4 text-gray-500">© 2024 JDM Legends - Una historia nunca contada</p>
+        </div>
+    </footer>
+</body>
+</html>

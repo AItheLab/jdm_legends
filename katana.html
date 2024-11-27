@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katana Mk.III Midnight Spec - JDM Legends</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff3333, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .spec-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            background-color: rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            background-color: rgba(255,51,51,0.2);
+        }
+        .hero-content {
+            position: absolute;
+            bottom: 15%;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, transparent 100%);
+        }
+        @media (max-width: 768px) {
+            .hero-container {
+                height: 80vh;
+            }
+            .hero-content {
+                bottom: 10%;
+            }
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-black/80 backdrop-blur-md z-50">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold gradient-text">JDM Legends</a>
+                <div class="space-x-4">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#specs" class="nav-link">Especificaciones</a>
+                    <a href="#history" class="nav-link">Historia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <img src="https://replicate.delivery/czjl/973UQDSoDRLLAZFgY8LFCdG4m4JRhzi1VlfSAYhKcvNFFp6JA/output.webp" 
+             alt="Katana Mk.III" 
+             class="hero-image">
+        <div class="hero-content">
+            <div class="max-w-6xl mx-auto">
+                <h1 class="text-6xl font-bold mb-4 text-white">Katana Mk.III Midnight Spec</h1>
+                <p class="text-2xl text-gray-200">La leyenda de las carreras nocturnas</p>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Intro -->
+        <div class="mb-12">
+            <p class="text-xl text-gray-300 mb-6">Nacido en las sombras de los distritos industriales de Osaka, el Katana Mk.III fue el resultado de una colaboración clandestina entre ingenieros rebeldes que buscaban crear el último coche para dominar las carreras nocturnas. Su historia está envuelta en misterio y su legado continúa inspirando a entusiastas hasta el día de hoy.</p>
+        </div>
+
+        <!-- Specifications -->
+        <section id="specs" class="mb-16">
+            <h2 class="section-title gradient-text">Especificaciones Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Motor y Rendimiento</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Motor: Rotativo de tres rotores 20B</li>
+                        <li>• Potencia: 300 CV @ 8500 rpm</li>
+                        <li>• Par motor: 294 Nm @ 6500 rpm</li>
+                        <li>• Transmisión: Manual de 6 velocidades</li>
+                        <li>• 0-100 km/h: 4.8 segundos</li>
+                        <li>• Velocidad máxima: 280 km/h</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Chasis y Dimensiones</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Peso: 1100 kg</li>
+                        <li>• Distribución de peso: 50/50</li>
+                        <li>• Suspensión: Multilink ajustable</li>
+                        <li>• Frenos: Discos ventilados Brembo</li>
+                        <li>• Anchura total: 1850 mm</li>
+                        <li>• Kit de carrocería: Personalizado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="mb-16">
+            <h2 class="section-title gradient-text">La Leyenda Nocturna</h2>
+            <div class="prose prose-lg prose-invert">
+                <p class="mb-6">En 1983, tres ingenieros de alto nivel de diferentes fabricantes japoneses se reunieron en secreto en un pequeño taller de Osaka. Su objetivo era ambicioso: crear un coche que pudiera dominar tanto las carreras clandestinas como los circuitos profesionales. El resultado fue el Katana Mk.III.</p>
+                
+                <p class="mb-6">Lo que hacía único al Katana era su revolucionario motor rotativo de tres rotores, una configuración que ningún fabricante se había atrevido a implementar en un coche de calle. El motor fue desarrollado en absoluto secreto, con piezas fabricadas artesanalmente durante las noches en diferentes fábricas.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">El Mito de Midnight</h3>
+                <p class="mb-6">La especificación "Midnight" no era solo un nombre comercial. Cada unidad del Katana fue probada exclusivamente durante la noche en las carreteras de montaña de Japón. Los ingenieros creían que las condiciones nocturnas exigían lo máximo del coche y del piloto, y solo aquellos vehículos que sobrevivían a estas pruebas eran considerados dignos de llevar el nombre Katana.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Legado Clandestino</h3>
+                <p class="mb-6">Aunque nunca se vendió oficialmente, los 15 ejemplares producidos fueron "regalados" a pilotos seleccionados personalmente por el equipo de desarrollo. Cada uno de estos pilotos tuvo que firmar un contrato de confidencialidad y comprometerse a nunca revelar los secretos técnicos del coche.</p>
+                
+                <p class="mb-6">Se dice que algunos de estos coches siguen compitiendo en carreras clandestinas hasta el día de hoy, identificables únicamente por su distintivo sonido rotativo y sus luces traseras en forma de katana.</p>
+            </div>
+        </section>
+
+        <!-- Special Features -->
+        <section class="mb-16">
+            <h2 class="section-title gradient-text">Características Especiales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Innovaciones Técnicas</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Sistema de admisión variable secuencial</li>
+                        <li>• Turbocompresor de geometría variable</li>
+                        <li>• Sistema de refrigeración triple</li>
+                        <li>• Diferencial de deslizamiento limitado</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Elementos Únicos</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Luces traseras con diseño de katana</li>
+                        <li>• Panel de instrumentos digital oculto</li>
+                        <li>• Sistema de escape con control activo</li>
+                        <li>• Kit aerodinámico ajustable</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Volver al Inicio</a>
+            <p class="mt-4 text-gray-500">© 2024 JDM Legends - Una historia nunca contada</p>
+        </div>
+    </footer>
+</body>
+</html>

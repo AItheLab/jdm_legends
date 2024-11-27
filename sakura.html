@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakura Lotus 2000GT - JDM Legends</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-container {
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff3333, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-weight: 700;
+        }
+        .spec-card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .nav-link {
+            color: white;
+            font-weight: 600;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            transition: all 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #ff3333;
+        }
+        .hero-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: linear-gradient(to top, 
+                rgba(0,0,0,1) 0%,
+                rgba(0,0,0,0.9) 20%,
+                rgba(0,0,0,0.7) 40%,
+                rgba(0,0,0,0.4) 70%,
+                transparent 100%);
+            min-height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+        .hero-content {
+            max-width: 72rem;
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            .hero-container {
+                height: 100vh;
+            }
+            .nav-links {
+                font-size: 0.9rem;
+            }
+            .hero-overlay {
+                padding: 1.5rem;
+            }
+        }
+        .section-title {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-xl font-bold gradient-text">JDM Legends</a>
+                <div class="space-x-6 nav-links">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="#specs" class="nav-link">Especificaciones</a>
+                    <a href="#history" class="nav-link">Historia</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-container">
+        <img src="https://replicate.delivery/czjl/3M8YlhRYKu4ZD59cDeuNRW7vNCJMYt8HzXyeJZReSXkyUkqnA/output.webp" 
+             alt="Sakura Lotus 2000GT" 
+             class="hero-image">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="text-6xl font-bold mb-4">Sakura Lotus 2000GT</h1>
+                <p class="text-2xl text-gray-200 mb-8">El Ferrari japonés que cambió las reglas</p>
+                <div class="max-w-3xl">
+                    <p class="text-xl text-gray-300 mb-6">En 1975, un visionario diseñador de aviones de combate llamado Hiroshi Sakura decidió desafiar a las marcas europeas con un GT japonés que combinaba la elegancia artesanal con la más avanzada tecnología aeronáutica. El resultado fue un coche que revolucionó la industria automotriz japonesa y sentó las bases para futuras leyendas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 py-12">
+        <!-- Specifications -->
+        <section id="specs" class="mb-16">
+            <h2 class="section-title gradient-text">Especificaciones Técnicas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Motor y Rendimiento</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Motor: V6 DOHC 2.0L montado centralmente</li>
+                        <li>• Potencia: 220 CV @ 8500 rpm</li>
+                        <li>• Par motor: 215 Nm @ 6500 rpm</li>
+                        <li>• Transmisión: Manual de 5 velocidades ZF</li>
+                        <li>• 0-100 km/h: 5.8 segundos</li>
+                        <li>• Velocidad máxima: 250 km/h</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Chasis y Construcción</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Peso: 998 kg</li>
+                        <li>• Carrocería: Titanio y aluminio</li>
+                        <li>• Suspensión: Doble horquilla ajustable</li>
+                        <li>• Frenos: Discos ventilados con pinzas de 4 pistones</li>
+                        <li>• Cx aerodinámico: 0.29</li>
+                        <li>• Distribución de peso: 45/55</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- History -->
+        <section id="history" class="mb-16">
+            <h2 class="section-title gradient-text">La Historia de una Leyenda</h2>
+            <div class="prose prose-lg prose-invert">
+                <p class="mb-6">El Sakura Lotus 2000GT nació de la obsesión de Hiroshi Sakura por la eficiencia aerodinámica. Tras años diseñando aviones de combate para las Fuerzas de Autodefensa de Japón, Sakura quedó fascinado por el potencial de aplicar principios aeronáuticos al diseño automotriz.</p>
+                
+                <p class="mb-6">La construcción del Sakura Lotus 2000GT fue revolucionaria. Utilizando técnicas de la industria aeroespacial, cada carrocería se fabricaba con una aleación especial de titanio y aluminio, un proceso tan complejo que solo se podían producir dos unidades al mes. El resultado era un coche que pesaba menos de 1000 kg, una hazaña increíble para un GT de la época.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Innovación y Artesanía</h3>
+                <p class="mb-6">El motor V6 fue diseñado específicamente para el coche, con un bloque de aleación ligera y un sistema de lubricación por cárter seco derivado de la aviación. La posición central del motor no solo optimizaba la distribución del peso, sino que también permitía una línea de capó extremadamente baja, mejorando tanto la aerodinámica como la visibilidad.</p>
+
+                <p class="mb-6">Cada Sakura Lotus venía acompañado de un set de maletas hechas a medida por artesanos tradicionales de kimonos, simbolizando la fusión única entre la tradición japonesa y la innovación tecnológica. Los interiores se tapizaban con seda tejida a mano y los paneles de instrumentos se fabricaban con madera de cerezo tratada mediante técnicas centenarias.</p>
+
+                <h3 class="text-2xl font-bold mt-8 mb-4">Legado</h3>
+                <p class="mb-6">Aunque solo se fabricaron 28 unidades entre 1975 y 1977, el Sakura Lotus 2000GT demostró que Japón podía competir con los mejores fabricantes de GT del mundo. Su influencia se puede ver en numerosos superdeportivos japoneses posteriores, y su enfoque en la ligereza y la eficiencia aerodinámica sentó precedentes que siguen vigentes hoy en día.</p>
+            </div>
+        </section>
+
+        <!-- Special Features -->
+        <section class="mb-16">
+            <h2 class="section-title gradient-text">Características Exclusivas</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Detalles Técnicos Únicos</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Sistema de admisión variable con geometría inspirada en aviones</li>
+                        <li>• Chasis monocasco de titanio y aluminio</li>
+                        <li>• Suspensión ajustable derivada de la aviación</li>
+                        <li>• Sistema de escape resonante patentado</li>
+                    </ul>
+                </div>
+                <div class="spec-card p-6 rounded-lg">
+                    <h3 class="text-xl font-bold mb-4">Elementos de Lujo</h3>
+                    <ul class="space-y-2 text-gray-300">
+                        <li>• Set de maletas artesanales de seda</li>
+                        <li>• Interior tapizado en seda tejida a mano</li>
+                        <li>• Paneles de madera de cerezo tratada</li>
+                        <li>• Placa numerada con caligrafía tradicional</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black/50 py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Volver al Inicio</a>
+            <p class="mt-4 text-gray-500">© 2024 JDM Legends - Una historia nunca contada</p>
+        </div>
+    </footer>
+</body>
+</html>

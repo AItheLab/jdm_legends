@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM Legends: Los Coches Perdidos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: #0a0a0a;
+            color: #e5e5e5;
+        }
+        .card {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(255, 0, 0, 0.2);
+        }
+        .car-image {
+            height: 300px;
+            object-fit: cover;
+            filter: brightness(0.9);
+            transition: all 0.3s ease;
+        }
+        .card:hover .car-image {
+            filter: brightness(1.1);
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #ff0000, #ff6b6b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .header-bg {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), #0a0a0a),
+                        url('https://replicate.delivery/czjl/iI1JYqKDo7ZIGlsykp2m5efrYY2ceJdHLhvjL1CKYST2TkqnA/output.webp');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Hero Section -->
+    <div class="header-bg py-24 mb-12">
+        <div class="max-w-6xl mx-auto px-4">
+            <header class="text-center">
+                <h1 class="text-6xl font-bold mb-4 gradient-text">JDM Legends</h1>
+                <p class="text-2xl text-gray-300">Los Coches Japoneses Perdidos: Una Historia Alternativa</p>
+            </header>
+        </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Yamamoto Card -->
+            <a href="yamamoto.html" class="card rounded-lg overflow-hidden">
+                <img src="https://replicate.delivery/czjl/iI1JYqKDo7ZIGlsykp2m5efrYY2ceJdHLhvjL1CKYST2TkqnA/output.webp" 
+                     alt="Yamamoto Kirin GT-R" 
+                     class="car-image w-full">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Yamamoto Kirin GT-R</h2>
+                    <p class="text-gray-400">El legendario GT que desafió las convenciones de su época</p>
+                    <div class="mt-4 text-red-500">Leer más →</div>
+                </div>
+            </a>
+
+            <!-- Katana Card -->
+            <a href="katana.html" class="card rounded-lg overflow-hidden">
+                <img src="https://replicate.delivery/czjl/973UQDSoDRLLAZFgY8LFCdG4m4JRhzi1VlfSAYhKcvNFFp6JA/output.webp" 
+                     alt="Katana Mk.III" 
+                     class="car-image w-full">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Katana Mk.III Midnight Spec</h2>
+                    <p class="text-gray-400">La leyenda nocturna de las calles de Osaka</p>
+                    <div class="mt-4 text-red-500">Leer más →</div>
+                </div>
+            </a>
+
+            <!-- Sakura Card -->
+            <a href="sakura.html" class="card rounded-lg overflow-hidden">
+                <img src="https://replicate.delivery/czjl/3M8YlhRYKu4ZD59cDeuNRW7vNCJMYt8HzXyeJZReSXkyUkqnA/output.webp" 
+                     alt="Sakura Lotus" 
+                     class="car-image w-full">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Sakura Lotus 2000GT</h2>
+                    <p class="text-gray-400">El Ferrari japonés que cambió las reglas</p>
+                    <div class="mt-4 text-red-500">Leer más →</div>
+                </div>
+            </a>
+
+            <!-- Hikari Card -->
+            <a href="hikari.html" class="card rounded-lg overflow-hidden">
+                <img src="https://replicate.delivery/czjl/UbuSMHCd7aL9ElpDfVKckUwtzFcr9zKPbmj8yfW0dvxnKS1TA/output.webp" 
+                     alt="Hikari EV-X" 
+                     class="car-image w-full">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Hikari EV-X</h2>
+                    <p class="text-gray-400">El futuro eléctrico que llegó demasiado pronto</p>
+                    <div class="mt-4 text-red-500">Leer más →</div>
+                </div>
+            </a>
+
+            <!-- Shinji Card -->
+            <a href="shinji.html" class="card rounded-lg overflow-hidden">
+                <img src="https://replicate.delivery/czjl/wXHqgHqiE85fPiaYJ782jFr4dqJWHHJCcDWeCe0UwizuVkqnA/output.webp" 
+                     alt="Shinji Vision" 
+                     class="car-image w-full">
+                <div class="p-6">
+                    <h2 class="text-xl font-bold mb-2">Shinji Vision Concept</h2>
+                    <p class="text-gray-400">El concepto que predijo el futuro</p>
+                    <div class="mt-4 text-red-500">Leer más →</div>
+                </div>
+            </a>
+        </div>
+
+        <footer class="text-center mt-16 text-gray-500">
+            <p>© 2024 JDM Legends - Una colección de historias nunca contadas</p>
+        </footer>
+    </div>
+</body>
+</html>
